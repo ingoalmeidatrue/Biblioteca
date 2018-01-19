@@ -1,4 +1,4 @@
-public class usu implements Receptor {
+public class Usu implements Receptor {
 	public void execute(){
 		
 	};

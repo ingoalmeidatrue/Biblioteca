@@ -1,5 +1,5 @@
 
-public class professor extends users {
+public class professor extends Users {
 	public void returnHistorico() {
 		
 	}
