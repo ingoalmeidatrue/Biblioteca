@@ -1,4 +1,4 @@
 
 public interface verificaEmprestimo {
-	public void verificarRegra();
+	public boolean verificarRegra();
 }
