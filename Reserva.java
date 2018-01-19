@@ -1,4 +1,6 @@
-public class Reserva {
+
+public class reserva {
 	public void res() {
+		
 	}
 }
