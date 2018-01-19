@@ -7,7 +7,9 @@ public class Rtf implements Receptor2 {
 		}
 		return instancia;
 	}
-	public void execute(int id){
-		
+	public void execute(int idLivro){
+		facadeBiblioteca facade;
+		facade=facadeBiblioteca.obterInstancia();
+		facade.fazerLiv(idLivro);
 	};
 }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class facadeBiblioteca {
 	public ArrayList<Users> Usuarios;
-	public ArrayList<Livro> livros;
+	public ArrayList<Livro> Livros;
 	private facadeBiblioteca() {}
 	private static facadeBiblioteca instancia;
 	public static facadeBiblioteca obterInstancia() {
@@ -13,19 +13,25 @@ public class facadeBiblioteca {
 	}
 	public void fazerDev(int idUsuario ,int idLivro){
 	}
-	public void fazerEmp(){
+	public void fazerEmp(int idUsuario ,int idLivro){
 		
 	}
-	public void fazerLiv(){
+	public void fazerLiv(int idLivro){
 		
 	}
-	public void fazerRes(){
+	public void fazerRes(int idUsuario ,int idLivro){
 		
 	}
 	public void fazerSai(){
 		
 	}
-	public void fazerObs(){
+	public void fazerObs(int idUsuario ,int idLivro){
+		
+	}
+	public void fazerUso(int idUsuario){
+		
+	}
+	public void fazerRtf(int idUsuario ){
 		
 	}
 }
