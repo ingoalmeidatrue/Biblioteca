@@ -9,4 +9,5 @@ public class Users {
 	public String nome;
 	public int type;
 	public boolean devedor;
+		
 }
