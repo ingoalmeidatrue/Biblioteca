@@ -1,15 +1,9 @@
 
-public class regrasemprestimoP implements comportamentoEmprestimo {
+public class regrasemprestimoP implements verificaEmprestimo {
 
 	@Override
 	public void verificarRegra() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public int tempoDeDevolucao() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 }

@@ -1,6 +1,4 @@
-
-public class devolucao {
+public class Devolucao {
 	public void dev() {
-		
 	}
 }

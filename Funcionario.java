@@ -1,12 +1,4 @@
-public class funcionario extends users {
-	
-	
-	
-	
-	
-	
-	
+public class Funcionario extends Users {
 	public void returnHistorico() {
-		
 	}
 }
