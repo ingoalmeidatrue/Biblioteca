@@ -5,5 +5,4 @@ public class Command {
 	public static void main(String[] args) {
 	all1 = new Hashtable<String, Receptor1>();
 	all2 = new  Hashtable<String, Receptor2>();
-	}
 }
