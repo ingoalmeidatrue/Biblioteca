@@ -1,5 +1,5 @@
 
-public class Historico {
+public class historico {
 	public int idlivro;
 	public String tituloLivro;
 	public int dataEmprestimo;

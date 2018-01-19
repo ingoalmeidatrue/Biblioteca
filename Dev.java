@@ -1,7 +1,5 @@
-public class Dev implements Receptor {
+public class dev implements Receptor {
 	public void execute(){
-		facadeBiblioteca facade;
-		facade=facadeBiblioteca.obterInstancia();
-		facade.fazerDev();
+		
 	};
 }

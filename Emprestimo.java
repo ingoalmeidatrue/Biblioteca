@@ -1,5 +1,5 @@
 
-public class Emprestimo {
+public class emprestimo {
 	public int idUser;
 	public int idLivro;
 	public int dataInicial;

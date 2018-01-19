@@ -1,7 +1,5 @@
-public class Sai implements Receptor {
+public class sai implements Receptor {
 	public void execute(){
-		facadeBiblioteca facade;
-		facade=facadeBiblioteca.obterInstancia();
-		facade.fazerSai();
+		
 	};
 }

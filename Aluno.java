@@ -1,4 +1,4 @@
-public class Aluno extends Users {
+public class aluno extends users {
 	public void returnHistorico() {
 		
 	}
