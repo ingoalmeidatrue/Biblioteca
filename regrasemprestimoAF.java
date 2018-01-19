@@ -1,7 +1,8 @@
 
 public class regrasemprestimoAF implements verificaEmprestimo {
-	public boolean verificarRegra() {
+	public boolean verificarRegra(Users user,Livro livro) {
 		return false;
 		
 	}
+
 }
