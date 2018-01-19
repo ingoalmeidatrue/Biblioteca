@@ -1,9 +1,8 @@
 
 public class regrasemprestimoP implements verificaEmprestimo {
 
-	@Override
-	public void verificarRegra() {
+	public boolean verificarRegra() {
 		// TODO Auto-generated method stub
-		
+		return false;
 	}
 }
