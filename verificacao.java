@@ -1,6 +1,5 @@
 
-
-public class Verificacao {
+public class verificacao {
 	public void verf() {
 		
 	}

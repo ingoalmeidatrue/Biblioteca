@@ -12,7 +12,6 @@ public class facadeBiblioteca {
 		return instancia;
 	}
 	public void fazerDev(int idUsuario ,int idLivro){
-		
 	}
 	public void fazerEmp(){
 		

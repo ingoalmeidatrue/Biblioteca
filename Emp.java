@@ -1,4 +1,3 @@
-
 public class Emp implements Receptor {
 	public void execute(){
 		facadeBiblioteca facade;
