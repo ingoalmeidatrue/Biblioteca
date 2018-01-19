@@ -24,24 +24,30 @@ public class Command {
 		System.out.println("Insira o comando");
 		String entrada = ler.nextLine();
 		String comando = entrada.substring(0, 2);
-		if(comando == "sai") {
-			return;
-		}
-		if(all1.containsKey(ler)){
-			Receptor1 x;	
-			x = all1.get(ler);
-			String id1 = entrada.substring(4,6);
-			String id2 = entrada.substring(8, 10);
-			int idUsuario = Integer.parseInt(id1);
-			int idLivro = Integer.parseInt(id2);
-			x.execute(idUsuario, idLivro);
-		}
-		else {
-			Receptor2 x;
-			x = all2.get(ler);
-			String id1 = entrada.substring(4,6);
-			int idUsuario = Integer.parseInt(id1);
-			x.execute(idUsuario);
+			while(comando != "sai"){
+				if(comando == "sai") {
+					return;
+				}
+				if(all1.containsKey(ler)){
+					Receptor1 x;	
+					x = all1.get(ler);
+					String id1 = entrada.substring(4,6);
+					String id2 = entrada.substring(8, 10);
+					int idUsuario = Integer.parseInt(id1);
+					int idLivro = Integer.parseInt(id2);
+					x.execute(idUsuario, idLivro);
+				}
+				else {
+					Receptor2 x;
+					x = all2.get(ler);
+					String id1 = entrada.substring(4,6);
+					int idUsuario = Integer.parseInt(id1);
+					x.execute(idUsuario);
+				}
+				ler = new Scanner(System.in);
+				System.out.println("Insira o comando");
+				entrada = ler.nextLine();
+				comando = entrada.substring(0, 2);
 		}
 	}
 }
