@@ -1,5 +1,6 @@
-public class Usu implements Receptor {
-	public void execute(){
+
+public class Usu implements Receptor2 {
+	public void execute(int id){
 		
 	};
 }
