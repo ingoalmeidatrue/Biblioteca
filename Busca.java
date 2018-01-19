@@ -22,12 +22,12 @@ public abstract class Busca {
 	}
 	public static Exemplar buscaLivroDisponiveis(int idLivro) {
 		Exemplar buscado;
-		for(int i=0 ;i <Exemplares.obterInstancia().LivrosDisponiveis.size();i++) {
-			buscado=Exemplares.obterInstancia().LivrosDisponiveis.get(i);
+		for(int i=0 ;i <Exemplares.LivrosDisponiveis.size();i++) {
+			buscado=Exemplares.LivrosDisponiveis.get(i);
 			if(buscado.id==idLivro) {
 				return buscado;
 			}
-		}
+		}	
 		return null;
 	}
 }
