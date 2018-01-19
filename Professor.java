@@ -1,5 +1,18 @@
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 
-public class Professor extends Users {
+public class professor extends users {
+	
+	
+	
+	
+	
+	public void verificarRegra() {
+		
+	}
+	
+	
 	public void returnHistorico() {
 		
 	}

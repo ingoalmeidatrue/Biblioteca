@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class facadeBiblioteca {
-	public ArrayList<Users> Usuarios;
-	public ArrayList<Livro> Livros;
+	public ArrayList<users> Usuarios;
+	public ArrayList<Livro> livros;
 	private facadeBiblioteca() {}
 	private static facadeBiblioteca instancia;
 	public static facadeBiblioteca obterInstancia() {
@@ -11,27 +11,22 @@ public class facadeBiblioteca {
 		}
 		return instancia;
 	}
-	public void fazerDev(int idUsuario ,int idLivro){
-	}
-	public void fazerEmp(int idUsuario ,int idLivro){
+	public void fazerDev(){
 		
 	}
-	public void fazerLiv(int idLivro){
+	public void fazerEmp(){
 		
 	}
-	public void fazerRes(int idUsuario ,int idLivro){
+	public void fazerLiv(){
+		
+	}
+	public void fazerRes(){
 		
 	}
 	public void fazerSai(){
 		
 	}
-	public void fazerObs(int idUsuario ,int idLivro){
-		
-	}
-	public void fazerUso(int idUsuario){
-		
-	}
-	public void fazerRtf(int idUsuario ){
+	public void fazerObs(){
 		
 	}
 }
