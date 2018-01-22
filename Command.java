@@ -4,6 +4,9 @@ public class Command {
 	static Hashtable <String, Receptor1> all1;
 	static Hashtable <String, Receptor2> all2;
 	public static void main(String[] args) {
+		Gera.geraExemplares();
+		Gera.geraLivros();
+		Gera.geraUsuarios();
 		all1 = new Hashtable<String, Receptor1>();
 		Emp emp = Emp.obterInstancia();
 		Res res = Res.obterInstancia();
@@ -23,31 +26,33 @@ public class Command {
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Insira o comando");
 		String entrada = ler.nextLine();
-		String comando = entrada.substring(0, 2);
+		String comando = entrada.substring(0, 3);
 			while(comando != "sai"){
 				if(comando == "sai") {
 					return;
 				}
-				if(all1.containsKey(ler)){
+				if(all1.containsKey(comando)){
 					Receptor1 x;	
-					x = all1.get(ler);
-					String id1 = entrada.substring(4,6);
-					String id2 = entrada.substring(8, 10);
+					x = all1.get(comando);
+					String id1 = entrada.substring(4,7);
+					String id2 = entrada.substring(8, 11);
 					int idUsuario = Integer.parseInt(id1);
 					int idLivro = Integer.parseInt(id2);
 					x.execute(idUsuario, idLivro);
+					//facadeBiblioteca.obterInstancia().imprimeLivrosCorrentes(idUsuario);
+					//Exemplares.imprime2();
 				}
 				else {
 					Receptor2 x;
-					x = all2.get(ler);
-					String id1 = entrada.substring(4,6);
+					x = all2.get(comando);
+					String id1 = entrada.substring(4,7);
 					int idUsuario = Integer.parseInt(id1);
 					x.execute(idUsuario);
 				}
 				ler = new Scanner(System.in);
 				System.out.println("Insira o comando");
 				entrada = ler.nextLine();
-				comando = entrada.substring(0, 2);
+				comando = entrada.substring(0, 3);
 		}
 	}
 }

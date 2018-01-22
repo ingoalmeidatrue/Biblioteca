@@ -16,6 +16,19 @@ public class fazerReserva {
 	}
 	reservas.remove(pos);
 }
+	
+	public static  int quantidadeReservas(Livro livro) {
+		int contador=0;
+		for(int i=0;i<reservas.size();i++) {
+			if(reservas.get(i).idLivro == livro.id) {
+				contador++;
+			}
+		}
+		return contador;
+	}
+	
+	
+	
 	public static boolean existeReserva(Users user,Livro livro) {
 		Reserva buscado;
 		for(int i=0 ;i < reservas.size();i++) {
