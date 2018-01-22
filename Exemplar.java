@@ -1,5 +1,5 @@
 
-public class Exemplar {
+public class Exemplar{
 	public int id;
 	public String idExp;
 	public boolean Exp;

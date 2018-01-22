@@ -1,12 +1,12 @@
 
 public class fazerEmprestimo {
-	public void emprestimoConcreto(Livro livro, Users user) { 
-		if(Users.comportamentoEmprestimo(user,livro)) {
-			Emprestimo e = new Emprestimo(user,livro);
+	public static void emprestimoConcreto(Users usuario, Livro livro) { 
+		if(usuario.verificaemprestimo.verificarRegra(usuario,livro)) {
+			Emprestimo e = new Emprestimo(usuario,livro);
 			e.setarEmprestismo();
-			user.adicionarCorrente(e);
+			usuario.adicionarCorrente(e);
 			Exemplares.removeLivroDisponiveis(livro);
-			if(fazerReserva.existeReserva(user,livro)) {
+			if(fazerReserva.existeReserva(usuario,livro)) {
 				Reserva.removeReserva(livro);
 			}
 		}

@@ -21,4 +21,16 @@ public class Exemplares {
 		}
 			return false;
 	}
+	
+	public static int quantidadeExemplares() {
+		return LivrosDisponiveis.size();
+	}
+	public static void imprime2() {
+		for(int i=0;i < LivrosDisponiveis.size();i++) {
+			System.out.print("livro");
+			System.out.print(i);
+			System.out.print(" ");
+			System.out.println(LivrosDisponiveis.get(i).id);
+		}
+	}
 }
