@@ -1,2 +1,2 @@
 # Biblioteca
-biblioteca engenharia de software
+biblioteca feita na disciplina engenharia de software utilizando padrôes de projeto.
